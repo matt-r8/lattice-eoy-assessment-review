@@ -1,0 +1,40 @@
+name: 'Setup Container Build'
+description: 'Set up Docker build environment with QEMU, Buildx, and registry login'
+
+# This action prepares the environment for building container images:
+# - QEMU: Enables multi-architecture builds (ARM64, AMD64)
+# - Buildx: Provides advanced Docker build capabilities
+# - Registry Login: Authenticates to container registry (typically GitHub Container Registry)
+
+inputs:
+  registry:
+    description: 'Container registry URL (e.g., ghcr.io)'
+    required: true
+    default: 'ghcr.io'
+  registry-username:
+    description: 'Registry username (typically github.actor for GHCR)'
+    required: true
+  registry-password:
+    description: 'Registry password/token (typically secrets.GITHUB_TOKEN for GHCR)'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    # QEMU enables building images for different CPU architectures
+    # Example: Build ARM64 images on AMD64 runners
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v3
+
+    # Buildx provides advanced build features like caching and multi-platform support
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    # Authenticate to container registry
+    # For GitHub Container Registry (ghcr.io), use github.actor and secrets.GITHUB_TOKEN
+    - name: Log in to Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ inputs.registry }}
+        username: ${{ inputs.registry-username }}
+        password: ${{ inputs.registry-password }}

@@ -1,0 +1,4 @@
+python-dotenv
+requests
+pytest
+python-docx>=1.1

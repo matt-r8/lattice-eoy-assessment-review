@@ -1,0 +1,31 @@
+{
+  "dockerComposeFile": "docker-compose.firewall.yml",
+  "service": "ai-assistant",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "aiAssistant",
+  "runServices": ["firewall-manager", "ai-assistant"],
+  "overrideCommand": false,
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "telemetry.telemetryLevel": "off",
+        "extensions.autoUpdate": false,
+        "extensions.autoCheckUpdates": false,
+        "extensions.ignoreRecommendations": true,
+        "workbench.enableExperiments": false,
+        "workbench.settings.enableNaturalLanguageSearch": false,
+        "update.mode": "none",
+        "update.showReleaseNotes": false,
+        "git.autofetch": false,
+        "git.autorefresh": false,
+        "npm.fetchOnlinePackageInfo": false,
+        "extensions.verifySignature": false,
+        "http.proxySupport": "off",
+        "settingsSync.enable": false,
+        "workbench.cloudChanges.autoResume": "off",
+        "workbench.cloudChanges.continueOn": "off",
+        "chat.detectParticipant.enabled": false
+      }
+    }
+  }
+}

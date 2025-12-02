@@ -1,0 +1,15 @@
+{
+  "image": "ghcr.io/rise8-us/xpai/ai-assistant-home@sha256:179f0024131b091ef8d48e98a52a60f5e9bdeb60ca2aa8c2da62e1c445c4ef50",
+  "postCreateCommand": "echo 'Container ready for Non-CUI projects with AI assistants pre-installed'",
+  "runArgs": [
+    "--env-file",".env"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code"
+      ]
+    }
+  },
+  "remoteUser": "aiAssistant"
+}

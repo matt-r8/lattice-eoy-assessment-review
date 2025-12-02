@@ -1,0 +1,34 @@
+# CODEOWNERS.example - Template for Code Ownership and Required Reviewers
+#
+# IMPORTANT: This is a TEMPLATE file for CMMC Level 2 compliance
+#
+# To use this file:
+# 1. Rename this file from CODEOWNERS.example to CODEOWNERS
+# 2. Replace @your-org/security-or-dev-team with your actual GitHub team or user handles
+# 3. Commit the file to enforce required reviews on security-critical files
+#
+# WHY THIS MATTERS FOR CMMC LEVEL 2:
+# CMMC Level 2 requires "Access Control" (AC.L2-3.001) which includes:
+# - Limiting system access to authorized users and processes
+# - Controlling information flow between systems and system components
+#
+# The firewall whitelist and configuration directly control network access boundaries.
+# Requiring code review on these files helps ensure:
+# - No unauthorized domains are added to the whitelist
+# - Changes are reviewed for security implications
+# - An audit trail exists for compliance verification
+#
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Firewall Configuration - Requires Security/Dev Team Review
+# All changes to the firewall whitelist must be reviewed to ensure CMMC Level 2
+# compliance and prevent unauthorized data exfiltration
+/firewall/whitelist.txt @your-org/security-or-dev-team
+
+# Firewall Initialization Script - Requires Security/Dev Team Review
+# Changes to firewall logic require review for security implications
+/firewall/init-firewall.sh @your-org/security-or-dev-team
+
+# Docker Compose Configuration - Requires Security/Dev Team Review
+# Container configuration affects security boundaries and network isolation
+/.devcontainer/docker-compose.firewall.yml @your-org/security-or-dev-team

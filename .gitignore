@@ -1,0 +1,13 @@
+# Never commit .env files to source control
+.env
+.env.bedrock
+
+# Onboarding script log file
+ai-assistant-onboard.log
+
+# Trivy security scanner temporary files
+# The aquasecurity/trivy-action creates this file in the repo root by concatenating
+# all .trivyignore files. It should not be committed to version control.
+# See: https://github.com/aquasecurity/trivy-action/blob/master/entrypoint.sh
+trivyignores
+anthropic_key.sh

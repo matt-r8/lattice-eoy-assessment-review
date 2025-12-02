@@ -1,0 +1,161 @@
+name: Update Base Container For New Version
+
+# This workflow monitors the AI assistant base container for new versions
+# and automatically updates references when changes are detected.
+#
+# DEFAULT BEHAVIOR:
+# Updates .devcontainer/devcontainer*.json files - for teams using the AI assistant
+# base container directly in their devcontainer.
+#
+# ALTERNATIVE USAGE:
+# See README for how to update project-container/Dockerfile instead - for teams
+# building their own custom container that extends the AI assistant base.
+#
+# When a new version is published:
+# - Detects the new SHA digest from the container registry
+# - Updates devcontainer image references
+# - Creates an automated PR with the changes
+
+on:
+  # IMPORTANT: Uncomment the schedule trigger below to enable automatic base container updates
+  # This is commented out by default to prevent unintended workflow runs
+  # in forked repositories. Remove the '#' at the start of each line to enable.
+
+  # schedule:
+  #   # Check for new versions once daily at 6 AM UTC
+  #   - cron: '0 6 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+
+# Security: Restrict workflow permissions to minimum required
+permissions:
+  contents: write      # To commit changes
+  packages: read       # To query container registry
+  pull-requests: write # To create PRs
+
+jobs:
+  check-and-update:
+    name: Check for New Base Container and Update
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Generate GitHub App Token
+        id: pr-bot-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.AI_ASSISTANT_PR_BOT_APP_ID }}
+          private-key: ${{ secrets.AI_ASSISTANT_PR_BOT_PRIVATE_KEY }}
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.pr-bot-token.outputs.token }}
+
+      - name: Get current latest container SHA
+        id: current-sha
+        env:
+          GITHUB_TOKEN: ${{ steps.pr-bot-token.outputs.token }}
+        run: |
+          # Get the SHA digest for the base container tagged with 'latest'
+          # This monitors the ai-assistant-home base image that this project builds upon
+          LATEST_SHA=$(gh api "orgs/rise8-us/packages/container/xpai%2Fai-assistant-home/versions" \
+            --jq '.[] | select(.metadata.container.tags[]? == "latest") | .name' \
+            | head -n1)
+
+          if [ -z "$LATEST_SHA" ]; then
+            echo "❌ Failed to get SHA for 'latest' tag"
+            exit 1
+          fi
+
+          echo "latest_sha=$LATEST_SHA" >> $GITHUB_OUTPUT
+          echo "Found latest base container SHA: $LATEST_SHA"
+
+      - name: Check if SHA has changed
+        id: sha-check
+        run: |
+          LATEST_SHA="${{ steps.current-sha.outputs.latest_sha }}"
+
+          # Check if we have a previous SHA stored
+          PREVIOUS_SHA_FILE=".github/.last-base-container-sha"
+
+          if [ -f "$PREVIOUS_SHA_FILE" ]; then
+            PREVIOUS_SHA=$(cat "$PREVIOUS_SHA_FILE")
+            echo "Previous SHA: $PREVIOUS_SHA"
+            echo "Current SHA: $LATEST_SHA"
+
+            if [ "$PREVIOUS_SHA" != "$LATEST_SHA" ]; then
+              echo "sha_changed=true" >> $GITHUB_OUTPUT
+              echo "Base container SHA has changed from $PREVIOUS_SHA to $LATEST_SHA"
+            else
+              echo "sha_changed=false" >> $GITHUB_OUTPUT
+              echo "Base container SHA has not changed"
+            fi
+          else
+            echo "sha_changed=true" >> $GITHUB_OUTPUT
+            echo "No previous SHA found, treating as changed"
+          fi
+
+          echo "previous_sha_file=$PREVIOUS_SHA_FILE" >> $GITHUB_OUTPUT
+
+      - name: Update SHA tracking file
+        if: steps.sha-check.outputs.sha_changed == 'true'
+        run: |
+          mkdir -p .github
+          echo "${{ steps.current-sha.outputs.latest_sha }}" > ${{ steps.sha-check.outputs.previous_sha_file }}
+
+      - name: Update devcontainer image references
+        if: steps.sha-check.outputs.sha_changed == 'true'
+        id: update_image
+        run: |
+          NEW_SHA="${{ steps.current-sha.outputs.latest_sha }}"
+
+          # Ensure SHA has sha256: prefix
+          if [[ "$NEW_SHA" == sha256:* ]]; then
+            FORMATTED_SHA="$NEW_SHA"
+          else
+            FORMATTED_SHA="sha256:$NEW_SHA"
+          fi
+
+          echo "Running devcontainer update script with SHA: $FORMATTED_SHA"
+          ./.github/scripts/update-ai-assistant-base-image.sh "$FORMATTED_SHA"
+
+      - name: Prepare branch name
+        if: steps.sha-check.outputs.sha_changed == 'true'
+        id: branch-name
+        run: |
+          BRANCH_NAME="base-container-sha-$(echo ${{ steps.current-sha.outputs.latest_sha }} | cut -d: -f2 | cut -c1-12)"
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          echo "Branch name: $BRANCH_NAME"
+
+      - name: Create automated PR
+        if: steps.sha-check.outputs.sha_changed == 'true'
+        uses: ./.github/actions/create-automated-pr
+        with:
+          github-token: ${{ steps.pr-bot-token.outputs.token }}
+          pr-title: "Auto-update: Base container SHA ${{ steps.current-sha.outputs.latest_sha }}"
+          pr-body: |
+            ## Summary
+
+            Automated update triggered by base container SHA change to `${{ steps.current-sha.outputs.latest_sha }}`.
+
+            ## Changes Made
+
+            The following files were automatically updated with the new base image SHA:
+            - `.devcontainer/devcontainer*.json` - Image references updated
+
+            ## Verification
+
+            - [ ] Review the SHA digest matches the latest published version
+            - [ ] Test the devcontainer with the new base image
+            - [ ] Verify all development tools still work correctly
+
+            🤖 Automated by GitHub Actions
+          commit-message: |
+            Auto-update: base container SHA changed to ${{ steps.current-sha.outputs.latest_sha }}
+
+            Updated base image SHA references in devcontainer files.
+
+            🤖 Automated by GitHub Actions
+          branch-name: ${{ steps.branch-name.outputs.branch_name }}
+          force-push: 'true'

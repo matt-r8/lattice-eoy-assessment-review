@@ -1,0 +1,45 @@
+name: 'Trivy Security Scan'
+description: 'Run Trivy vulnerability scanner on container image'
+
+# Trivy is an open-source vulnerability scanner for containers.
+# It scans for:
+# - OS package vulnerabilities (CVEs)
+# - Language-specific package vulnerabilities
+# - Misconfiguration issues
+# - Secrets accidentally committed
+
+inputs:
+  image-ref:
+    description: 'Container image reference to scan (e.g., ghcr.io/org/repo:tag or ghcr.io/org/repo@sha256:...)'
+    required: true
+  trivyignores-path:
+    description: 'Path to .trivyignore file containing accepted CVEs with risk assessments'
+    required: false
+    default: '.trivyignore'
+  format:
+    description: 'Output format (table, json, sarif)'
+    required: false
+    default: 'table'
+  severity:
+    description: 'Comma-separated list of severity levels to scan for (CRITICAL, HIGH, MEDIUM, LOW, UNKNOWN)'
+    required: false
+    default: 'CRITICAL,HIGH'
+
+runs:
+  using: 'composite'
+  steps:
+    # Run Trivy scanner
+    # The scan will FAIL the build if vulnerabilities are found at the specified severity levels,
+    # unless they are documented in .trivyignore with a risk assessment.
+    # This enforces security standards - builds must be clean or document accepted risks.
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@915b19bbe73b92a6cf82a1bc12b087c9a19a5fe2
+      with:
+        image-ref: ${{ inputs.image-ref }}
+        format: ${{ inputs.format }}
+        severity: ${{ inputs.severity }}
+        exit-code: '1'  # Always fail on vulnerabilities - no exceptions
+        trivyignores: ${{ inputs.trivyignores-path }}
+      env:
+        # Use memory backend to avoid permission issues with cache directories
+        TRIVY_CACHE_BACKEND: memory

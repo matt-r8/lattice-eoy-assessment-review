@@ -1,0 +1,62 @@
+name: 'Create Automated PR'
+description: 'Creates a pull request with automated changes using bot identity'
+
+inputs:
+  github-token:
+    description: 'GitHub token (usually from GitHub App) with contents:write and pull-requests:write'
+    required: true
+  pr-title:
+    description: 'Pull request title'
+    required: true
+  pr-body:
+    description: 'Pull request body (supports markdown)'
+    required: true
+  commit-message:
+    description: 'Commit message (first line becomes title, rest becomes body)'
+    required: true
+  branch-name:
+    description: 'Branch name for the PR (e.g., devcontainer-sha-abc123, software-versions-20251006)'
+    required: true
+  base-branch:
+    description: 'Base branch for PR'
+    required: false
+    default: 'main'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Configure git
+      shell: bash
+      run: |
+        git config --global user.name 'xpai-housekeeping-bot[bot]'
+        git config --global user.email 'xpai-housekeeping-bot[bot]@users.noreply.github.com'
+
+    - name: Check for changes
+      id: changes
+      shell: bash
+      run: |
+        if git diff --quiet && git diff --cached --quiet; then
+          echo "No changes detected - skipping PR creation"
+          exit 0
+        fi
+        echo "Changes detected - proceeding with PR creation"
+
+    - name: Create branch and commit
+      shell: bash
+      run: |
+        echo "Creating branch: ${{ inputs.branch-name }}"
+        git checkout -b "${{ inputs.branch-name }}"
+        git add -A
+        git commit -m "${{ inputs.commit-message }}"
+        git push origin "${{ inputs.branch-name }}"
+
+    - name: Create pull request
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+      run: |
+        gh pr create \
+          --title "${{ inputs.pr-title }}" \
+          --body "${{ inputs.pr-body }}" \
+          --base ${{ inputs.base-branch }} \
+          --head "${{ inputs.branch-name }}"

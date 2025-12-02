@@ -1,0 +1,12 @@
+.env
+venv/
+__pycache__
+*.pyc.env
+.env
+summaries/*
+updates/*
+.DS_Store
+*.docx
+*.db*
+credentials.json
+.idea

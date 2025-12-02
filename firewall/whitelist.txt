@@ -1,0 +1,34 @@
+# Firewall Whitelist Configuration - MINIMAL CUI COMPLIANT
+# Format: domain:port (one entry per line)
+# Comments start with #, empty lines ignored
+#
+# SECURITY REVIEW EVIDENCE:
+# Testing shows only us-gov-east-1 endpoints are actively used.
+# West-1 endpoints had 0 packets during testing but are included for failover.
+#
+# Total: 4 entries, all within AWS GovCloud boundary
+
+# AWS Bedrock Runtime API (us-gov-east-1) - REQUIRED
+# Evidence: 6 packets, actively used for AI inference
+bedrock-runtime.us-gov-east-1.amazonaws.com:443
+
+# AWS Bedrock Control Plane API (us-gov-east-1) - REQUIRED
+# Evidence: 1 packet, used for API initialization
+bedrock.us-gov-east-1.amazonaws.com:443
+
+# AWS Bedrock Runtime API (us-gov-west-1) - FAILOVER
+# Evidence: 0 packets during testing
+# Reason for inclusion: Multi-region failover within GovCloud boundary
+bedrock-runtime.us-gov-west-1.amazonaws.com:443
+
+# AWS Bedrock Control Plane API (us-gov-west-1) - FAILOVER
+# Evidence: 0 packets during testing
+# Reason for inclusion: Multi-region failover within GovCloud boundary
+bedrock.us-gov-west-1.amazonaws.com:443
+
+# ============================================================================
+# OPTIMIZATION NOTE FOR FUTURE REVIEW:
+# ============================================================================
+# If stricter security is required and multi-region failover is not needed,
+# the us-gov-west-1 endpoints (last 2 entries) can be removed.
+# This would reduce the whitelist to only 2 entries.
