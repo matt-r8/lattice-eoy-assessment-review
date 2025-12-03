@@ -1,0 +1,146 @@
+{
+  "summary": {
+    "total_entries": 146,
+    "matched": 99,
+    "unmatched_in_map": 0,
+    "unmatched_in_data": 15,
+    "non_risers_skipped": 2,
+    "duplicates": 2
+  },
+  "unmatched_in_data": [
+    {
+      "original_name": "Hafeez Ur Rahman Mohammed",
+      "converted_name": "Mohammed, Hafeez Ur Rahman",
+      "team": "Platform",
+      "project": "VA Lighthouse - SecRel & LHDI (Technatomy)"
+    },
+    {
+      "original_name": "Nate Enders",
+      "converted_name": "Enders, Nate",
+      "team": "OSIT",
+      "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
+    },
+    {
+      "original_name": "Terry Rydz",
+      "converted_name": "Rydz, Terry",
+      "team": "FORGE",
+      "project": "Customer Success"
+    },
+    {
+      "original_name": "Ethan Reid",
+      "converted_name": "Reid, Ethan",
+      "team": "Platform",
+      "project": "SSC/SNGF FORGE (AP IDIQ)"
+    },
+    {
+      "original_name": "Jacob Ayala",
+      "converted_name": "Ayala, Jacob",
+      "team": "Enablement",
+      "project": "SSC/SNGF FORGE (AP IDIQ)"
+    },
+    {
+      "original_name": "David Chapman",
+      "converted_name": "Chapman, David",
+      "team": "Onboarding",
+      "project": "SSC/SNGF FORGE (AP IDIQ)"
+    },
+    {
+      "original_name": "Miles Smith",
+      "converted_name": "Smith, Miles",
+      "team": "Framework Services",
+      "project": "SSC/SNGF FORGE (AP IDIQ)"
+    },
+    {
+      "original_name": "Benjamin Adinata",
+      "converted_name": "Adinata, Benjamin",
+      "team": "Polaris",
+      "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
+    },
+    {
+      "original_name": "Vicente Pamparo",
+      "converted_name": "Pamparo, Vicente",
+      "team": "App",
+      "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
+    },
+    {
+      "original_name": "Jon Brooks",
+      "converted_name": "Brooks, Jon",
+      "team": "SciTec",
+      "project": "SDA - PWSA AppFactory Transition Study (SciTec)"
+    },
+    {
+      "original_name": "Jacob Almond",
+      "converted_name": "Almond, Jacob",
+      "team": "ACE",
+      "project": "VA OCTO - Accelerate Cybersecurity Excellence (SPRUCE)"
+    },
+    {
+      "original_name": "Alex Laugle",
+      "converted_name": "Laugle, Alex",
+      "team": "ACE",
+      "project": "VA OCTO - Accelerate Cybersecurity Excellence (SPRUCE)"
+    },
+    {
+      "original_name": "Jason Elting",
+      "converted_name": "Elting, Jason",
+      "team": "ACE",
+      "project": "VA OCTO - Accelerate Cybersecurity Excellence (SPRUCE)"
+    },
+    {
+      "original_name": "Andrew Lazarek",
+      "converted_name": "Lazarek, Andrew",
+      "team": "DevEn",
+      "project": "VA PTEMS Lighthouse (Deloitte)"
+    },
+    {
+      "original_name": "Paul Coluccio",
+      "converted_name": "Coluccio, Paul",
+      "team": "SecRel",
+      "project": "VA PTEMS Lighthouse (Deloitte)"
+    }
+  ],
+  "non_risers": [
+    [
+      "SSC/SNGF FORGE (AP IDIQ)",
+      "Enablement",
+      "Oddball - FORGE"
+    ],
+    [
+      "SSC/CGTM EM&C SATCOM (AP IDIQ)",
+      "Nebula",
+      "Wilcore - Jordan Flyod"
+    ]
+  ],
+  "duplicates": [
+    {
+      "name": "Patel, Riya",
+      "entries": [
+        {
+          "project": "Customer Success",
+          "team": "SPOC",
+          "original_name": "Riya Patel"
+        },
+        {
+          "project": "Customer Success",
+          "team": "Bifrost",
+          "original_name": "Riya Patel"
+        }
+      ]
+    },
+    {
+      "name": "Croney, David",
+      "entries": [
+        {
+          "project": "SDA - PWSA AppFactory Transition Study (SciTec)",
+          "team": "SciTec",
+          "original_name": "David Croney"
+        },
+        {
+          "project": "VA PTEMS Lighthouse (Deloitte)",
+          "team": "DevEn",
+          "original_name": "David Croney"
+        }
+      ]
+    }
+  ]
+}

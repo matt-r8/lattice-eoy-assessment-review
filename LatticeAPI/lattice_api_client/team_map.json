@@ -1,586 +1,878 @@
 {
     "Adinata, Ben": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Polaris",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Akre, Sagar": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "OSIT/POSNEG",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Allen, Coty": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "DevEn",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Almond, Coby": {
         "department": "Design",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "ACE",
+        "project": "VA OCTO - Accelerate Cybersecurity Excellence (SPRUCE)"
     },
     "Alvarado, David": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Enablement",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Alvarez, Benjamin": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Cyber",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Anastasio, Tom": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Malibu",
+        "project": "KM - Section 31 & Platform (Tecolote)"
     },
     "Andrews, Joseph": {
-        "department": "Executive",
-        "level": "Director"
+        "department": "PeopleOps",
+        "level": "Director",
+        "team": "Directorate",
+        "project": "Overhead"
     },
     "Arzuaga, Jeremy": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "ACE",
+        "project": "VA OCTO - Accelerate Cybersecurity Excellence (SPRUCE)"
     },
     "Ayala, Jacobi": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Enablement",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Aziz, Sal": {
         "department": "Marketing",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Marketing",
+        "project": "Overhead"
     },
     "Bair, Steven": {
         "department": "Platform-Cyber",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Portfolio",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Baumann, Brent": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Crew Lead",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Benson, Danny": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "OSIT",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Berner, Alex": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Portfolio",
+        "project": "KM - Section 31 & Platform (Tecolote)"
     },
     "Bhanderi, Roshni": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "OSIT",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Bitter, Dan": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "OSIT",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Blotter, Dave": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "IT Services",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Bossie, Dylan": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Platform",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Brierton, Alexandra": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Onboarding",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Brinson, Cason": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Blitzar",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Brodowski, Chris": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "SecRel",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Burton, Abbie": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Malibu",
+        "project": "KM - Section 31 & Platform (Tecolote)"
     },
     "Carlson, Scott": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "SecRel",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Cast, Chase": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "IT Services",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Chang, Erica": {
         "department": "Design",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "App",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Chapman, Dave": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Onboarding",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Chen, Shanna": {
         "department": "Growth",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "Growth",
+        "project": "Overhead"
     },
     "Cheng, Hannah": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Nebula",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Cook, Jake": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Framework Services",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Coveno, Delaney": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "App",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Croney, David": {
         "department": "Product-Management",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "SciTec",
+        "project": "SDA - PWSA AppFactory Transition Study (SciTec)"
     },
     "Culpepper, Jerod": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Platform",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Dalen, Jonathan Van": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Design",
+        "project": "Overhead"
     },
     "Davidson, Alden": {
         "department": "Software",
-        "level": "Practitioner III"
-    },
-    "DeSpain, Darius": {
-        "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Onboarding",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Derbur, Branden Van": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "SecRel",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
+    },
+    "DeSpain, Darius": {
+        "department": "Software",
+        "level": "Practitioner III",
+        "team": "Starfox",
+        "project": "KM - Section 31 & Platform (Tecolote)"
     },
     "Dilworth, Jordan": {
-        "department": "Executive",
-        "level": "Director"
+        "department": "Marketing",
+        "level": "Director",
+        "team": "Directorate",
+        "project": "Overhead"
     },
     "Dombek, Derek": {
         "department": "Platform-Cyber",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "SecRel",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Doub, Dylan": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "SecRel",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Dozier, Kyle": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Platform",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Duong, Peter": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Blitzar",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Eissler, Nick": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Blitzar",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Estoy, Michael": {
         "department": "Product-Management",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Beach",
+        "project": "Overhead"
     },
     "Fishman, Marc": {
         "department": "Marketing",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "Marketing",
+        "project": "Overhead"
     },
     "Foregard, Vin": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Blitzar",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Fretz, Paul": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "DevEn",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Fugate, Drew": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Polaris",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Furtado, Adam": {
-        "department": "Executive",
-        "level": "Director"
+        "department": "Enablement",
+        "level": "Director",
+        "team": "Directorate",
+        "project": "Overhead"
     },
     "Gardner, Adam": {
         "department": "Software",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Framework Services",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Gates, Kevin": {
         "department": "Design",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Platform",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Gehard, Mike": {
-        "department": "Enablement",
-        "level": "Staff Practitioner"
+        "department": "Software",
+        "level": "Staff Practitioner",
+        "team": "Enablement",
+        "project": "Overhead"
     },
     "Goel, Shubham": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Polaris",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Golan, Ron": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "ACE",
+        "project": "VA OCTO - Accelerate Cybersecurity Excellence (SPRUCE)"
     },
     "Hamilton, Sharon": {
         "department": "Customer-Success",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "VA",
+        "project": "Customer Success"
     },
     "Herbert, Sean": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "SecRel",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
-    "Hernandez, Abel A A": {
+    "Hernandez, Abel": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Beach",
+        "project": "Overhead"
     },
     "Hibbard, Ainsilie": {
         "department": "Delivery",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Delivery",
+        "project": "Overhead"
     },
     "Hove, Jennifer Van": {
         "department": "Product-Management",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Delivery",
+        "project": "Overhead"
     },
     "Hurlbut, Cory": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "OSIT",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "James, Becca": {
         "department": "Product-Management",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Delivery",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Jennings, Brian": {
-        "department": "Enablement",
-        "level": "Staff Practitioner"
+        "department": "Design",
+        "level": "Staff Practitioner",
+        "team": "Enablement",
+        "project": "Overhead"
     },
     "Jhaveri, Pooja": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Enablement",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Johns, Chris": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Platform/Cyber",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Joseph, Justin": {
         "department": "Platform-Cyber",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Nebula",
+        "project": "SLD45 Nebula - Landing Zone (Dark Wolf)"
     },
     "Kalmenson, Yechiel": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Nebula",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Karaya, Edwin": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Nebula",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Kay, Kenny": {
         "department": "Finance",
-        "level": "Practitioner I"
+        "level": "Practitioner I",
+        "team": "Finance",
+        "project": "Overhead"
     },
     "Kilroy, Shawn": {
         "department": "Customer-Success",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Portfolio",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Kim, Seehyun": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Polaris",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Knife, Andrew": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "SecRel",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Krikorian, Mases": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "OSIT",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Kroger, Bryon": {
         "department": "Executive",
-        "level": "Executive"
+        "level": "Executive",
+        "team": "Executive",
+        "project": "Overhead"
     },
     "Kung, Ann": {
         "department": "Product-Management",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "IT Services",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Lamberson, David": {
         "department": "Software",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Portfolio",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Leon, Octavia": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Cyber",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Liu, Yi": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "OSIT",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Lopez, Jennifer": {
         "department": "Executive",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "Executive",
+        "project": "Overhead"
     },
     "Luckey, Nick": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Platform",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Maye, Michael": {
         "department": "Software",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "Beach",
+        "project": "Overhead"
     },
     "McFarland, Drew": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Enablement",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "McGraw, Darla": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Blitzar",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "McHugh, Noah": {
         "department": "Enablement",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Enablement",
+        "project": "Overhead"
     },
     "McLean, Cara": {
         "department": "Marketing",
-        "level": "Practitioner I"
+        "level": "Practitioner I",
+        "team": "Marketing",
+        "project": "Overhead"
     },
     "McQueen, Samuel": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Cyber",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Mendiola, Nick": {
         "department": "Design",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Beach",
+        "project": "Overhead"
     },
     "Mladinov, Evan": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "OSIT/POSNEG",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Mohammed, Hafeez Rahman": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Platform",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Monroe, Rob": {
-        "department": "Enablement",
-        "level": "Staff Practitioner"
+        "department": "Product-Management",
+        "level": "Staff Practitioner",
+        "team": "Enablement",
+        "project": "Overhead"
     },
     "Mordan, Kevan": {
         "department": "Software",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Delivery",
+        "project": "Overhead"
     },
     "Mudd, Darrell": {
         "department": "PeopleOps",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "PeopleOps",
+        "project": "Overhead"
     },
     "Muller, Jeff": {
         "department": "Executive",
-        "level": "Executive"
+        "level": "Executive",
+        "team": "Executive",
+        "project": "Overhead"
     },
     "Nash, Kevin": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "WatchTower",
+        "project": "VA OCTO - Watchtower (SBIR)"
     },
     "Nguonly, Bryce": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "App",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Nguyen, Minh": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Nebula",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Nieto, Paul": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "TRACER",
+        "project": "Overhead"
     },
     "Nkansah, Asare": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Platform",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Nkansah, Jodie": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "DevEn",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "O'Donnell, Matt": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Beach",
+        "project": "Overhead"
     },
     "Pacione, Matt": {
-        "department": "Enablement",
-        "level": "Staff Practitioner"
+        "department": "Platform-Cyber",
+        "level": "Staff Practitioner",
+        "team": "Enablement",
+        "project": "Overhead"
     },
     "Pain, Clark": {
         "department": "Product-Management",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "App",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Patel, Riya": {
         "department": "Customer-Success",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "SPOC",
+        "project": "Customer Success"
     },
     "Patel, Roshni": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Nebula",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Pearce, Ashley": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "SecRel",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Pearce, Wayland": {
         "department": "IT",
-        "level": null
+        "level": "Senior Practitioner",
+        "team": "IT",
+        "project": "Overhead"
     },
     "Pearse, McKinnon": {
         "department": "Marketing",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Marketing",
+        "project": "Overhead"
     },
     "Pearson, Kristin": {
-        "department": "Executive",
-        "level": "Director"
+        "department": "Customer-Success",
+        "level": "Director",
+        "team": "Directorate",
+        "project": "Overhead"
     },
     "Pollin, Mary": {
         "department": "Product-Management",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "SecRel",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Pritchett, Joshua": {
         "department": "Product-Management",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Portfolio",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Redding, Damon": {
         "department": "Design",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Starfox",
+        "project": "KM - Section 31 & Platform (Tecolote)"
     },
     "Reele, Max": {
-        "department": "Executive",
-        "level": "Director"
+        "department": "Delivery",
+        "level": "Director",
+        "team": "Directorate",
+        "project": "Overhead"
     },
     "Reinken, Schuyler": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "SecRel",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Reynolds, Justin": {
         "department": "Software",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "TRACER",
+        "project": "Overhead"
     },
     "Reynolds, Thomas": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "TRACER",
+        "project": "Overhead"
     },
     "Rijal, Basudev": {
         "department": "IT",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "IT",
+        "project": "Overhead"
     },
     "Rodanski, Jeff": {
-        "department": "Enablement",
-        "level": "Staff Practitioner"
+        "department": "Design",
+        "level": "Staff Practitioner",
+        "team": "Enablement",
+        "project": "Overhead"
     },
     "Sadasiv, Lakshmi": {
         "department": "Enablement",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Enablement",
+        "project": "Overhead"
     },
     "Sanker, Dan": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Platform/Cyber",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Sharpe, Norman": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Polaris",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Shouse, Brandon": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Platform",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Silverman, Michael": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Onboarding",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Slater, Kenny": {
         "department": "Platform-Cyber",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Platform/Cyber",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Smart, Kyle": {
         "department": "Software",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "OSIT",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Souto, Steven": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "App",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Spakes, Clayton": {
         "department": "Growth",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Growth",
+        "project": "Overhead"
     },
     "Sperry, Ian": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Blitzar",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Steinbeck, Jeremy": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Cyber",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Strebel, Luke": {
         "department": "Product-Management",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "SecRel",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Ten-Kate, Vanessa": {
         "department": "Marketing",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Marketing",
+        "project": "Overhead"
     },
     "Torres, Pedro": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "SecRel",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Tovar, Art": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "WatchTower",
+        "project": "VA OCTO - Watchtower (SBIR)"
     },
     "Tuck, Ryan": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "ACE",
+        "project": "VA OCTO - Accelerate Cybersecurity Excellence (SPRUCE)"
     },
     "Vecchio, Rachel Del": {
         "department": "Marketing",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Marketing",
+        "project": "Overhead"
     },
     "Vennela, Sridhar": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "WatchTower",
+        "project": "VA OCTO - Watchtower (SBIR)"
     },
     "Viray, Carlo": {
-        "department": "Executive",
-        "level": "Director"
+        "department": "Growth",
+        "level": "Director",
+        "team": "Directorate",
+        "project": "Overhead"
     },
     "Viray, Jeremy": {
         "department": "Software",
-        "level": "Practitioner II"
+        "level": "Practitioner II",
+        "team": "App",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Walker, Christal": {
         "department": "Operations",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Operations",
+        "project": "Overhead"
     },
     "Wang, Chris": {
         "department": "Software",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Polaris",
+        "project": "SSC/CGTM EM&C SATCOM (AP IDIQ)"
     },
     "Weiss, Nick": {
         "department": "Product-Management",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Platform",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Whitman, Eric": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Platform",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Wilkins, Jesse": {
         "department": "Product-Management",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "Enablement",
+        "project": "SSC/SNGF FORGE (AP IDIQ)"
     },
     "Wills, Jeff": {
         "department": "Delivery",
-        "level": "Staff Practitioner"
+        "level": "Staff Practitioner",
+        "team": "Delivery",
+        "project": "Overhead"
     },
     "Yoo, Sally": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "SecRel",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     },
     "Zahid, Tiyyiba": {
         "department": "Platform-Cyber",
-        "level": "Practitioner III"
+        "level": "Practitioner III",
+        "team": "Platform/Cyber",
+        "project": "SSC/BCCB Apollo Path to Prod - Bifrost (STRATFI SBIR)"
     },
     "Zubia, Anthony": {
         "department": "Design",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "OSIT",
+        "project": "SPOC/S35F - Combat Enhancement Teams (AP IDIQ)"
     },
     "Zubiri, John": {
         "department": "Platform-Cyber",
-        "level": "Senior Practitioner"
+        "level": "Senior Practitioner",
+        "team": "SecRel",
+        "project": "VA PTEMS Lighthouse (Deloitte)"
     }
 }
