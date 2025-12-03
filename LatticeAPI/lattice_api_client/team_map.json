@@ -1,0 +1,586 @@
+{
+    "Adinata, Ben": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Akre, Sagar": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Allen, Coty": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Almond, Coby": {
+        "department": "Design",
+        "level": "Staff Practitioner"
+    },
+    "Alvarado, David": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Alvarez, Benjamin": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Anastasio, Tom": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Andrews, Joseph": {
+        "department": "Executive",
+        "level": "Director"
+    },
+    "Arzuaga, Jeremy": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Ayala, Jacobi": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Aziz, Sal": {
+        "department": "Marketing",
+        "level": "Senior Practitioner"
+    },
+    "Bair, Steven": {
+        "department": "Platform-Cyber",
+        "level": "Staff Practitioner"
+    },
+    "Baumann, Brent": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Benson, Danny": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Berner, Alex": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Bhanderi, Roshni": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Bitter, Dan": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Blotter, Dave": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Bossie, Dylan": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Brierton, Alexandra": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Brinson, Cason": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Brodowski, Chris": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Burton, Abbie": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Carlson, Scott": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Cast, Chase": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Chang, Erica": {
+        "department": "Design",
+        "level": "Practitioner III"
+    },
+    "Chapman, Dave": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Chen, Shanna": {
+        "department": "Growth",
+        "level": "Practitioner II"
+    },
+    "Cheng, Hannah": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Cook, Jake": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Coveno, Delaney": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Croney, David": {
+        "department": "Product-Management",
+        "level": "Staff Practitioner"
+    },
+    "Culpepper, Jerod": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Dalen, Jonathan Van": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Davidson, Alden": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "DeSpain, Darius": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Derbur, Branden Van": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Dilworth, Jordan": {
+        "department": "Executive",
+        "level": "Director"
+    },
+    "Dombek, Derek": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner II"
+    },
+    "Doub, Dylan": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Dozier, Kyle": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Duong, Peter": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Eissler, Nick": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Estoy, Michael": {
+        "department": "Product-Management",
+        "level": "Practitioner III"
+    },
+    "Fishman, Marc": {
+        "department": "Marketing",
+        "level": "Practitioner II"
+    },
+    "Foregard, Vin": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Fretz, Paul": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Fugate, Drew": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Furtado, Adam": {
+        "department": "Executive",
+        "level": "Director"
+    },
+    "Gardner, Adam": {
+        "department": "Software",
+        "level": "Staff Practitioner"
+    },
+    "Gates, Kevin": {
+        "department": "Design",
+        "level": "Staff Practitioner"
+    },
+    "Gehard, Mike": {
+        "department": "Enablement",
+        "level": "Staff Practitioner"
+    },
+    "Goel, Shubham": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Golan, Ron": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Hamilton, Sharon": {
+        "department": "Customer-Success",
+        "level": "Senior Practitioner"
+    },
+    "Herbert, Sean": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Hernandez, Abel A A": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Hibbard, Ainsilie": {
+        "department": "Delivery",
+        "level": "Practitioner III"
+    },
+    "Hove, Jennifer Van": {
+        "department": "Product-Management",
+        "level": "Staff Practitioner"
+    },
+    "Hurlbut, Cory": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "James, Becca": {
+        "department": "Product-Management",
+        "level": "Staff Practitioner"
+    },
+    "Jennings, Brian": {
+        "department": "Enablement",
+        "level": "Staff Practitioner"
+    },
+    "Jhaveri, Pooja": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Johns, Chris": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Joseph, Justin": {
+        "department": "Platform-Cyber",
+        "level": "Staff Practitioner"
+    },
+    "Kalmenson, Yechiel": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Karaya, Edwin": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Kay, Kenny": {
+        "department": "Finance",
+        "level": "Practitioner I"
+    },
+    "Kilroy, Shawn": {
+        "department": "Customer-Success",
+        "level": "Senior Practitioner"
+    },
+    "Kim, Seehyun": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Knife, Andrew": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Krikorian, Mases": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Kroger, Bryon": {
+        "department": "Executive",
+        "level": "Executive"
+    },
+    "Kung, Ann": {
+        "department": "Product-Management",
+        "level": "Practitioner II"
+    },
+    "Lamberson, David": {
+        "department": "Software",
+        "level": "Staff Practitioner"
+    },
+    "Leon, Octavia": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Liu, Yi": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Lopez, Jennifer": {
+        "department": "Executive",
+        "level": "Practitioner II"
+    },
+    "Luckey, Nick": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Maye, Michael": {
+        "department": "Software",
+        "level": "Practitioner II"
+    },
+    "McFarland, Drew": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "McGraw, Darla": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "McHugh, Noah": {
+        "department": "Enablement",
+        "level": "Staff Practitioner"
+    },
+    "McLean, Cara": {
+        "department": "Marketing",
+        "level": "Practitioner I"
+    },
+    "McQueen, Samuel": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Mendiola, Nick": {
+        "department": "Design",
+        "level": "Practitioner III"
+    },
+    "Mladinov, Evan": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Mohammed, Hafeez Rahman": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Monroe, Rob": {
+        "department": "Enablement",
+        "level": "Staff Practitioner"
+    },
+    "Mordan, Kevan": {
+        "department": "Software",
+        "level": "Staff Practitioner"
+    },
+    "Mudd, Darrell": {
+        "department": "PeopleOps",
+        "level": "Practitioner III"
+    },
+    "Muller, Jeff": {
+        "department": "Executive",
+        "level": "Executive"
+    },
+    "Nash, Kevin": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Nguonly, Bryce": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Nguyen, Minh": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Nieto, Paul": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Nkansah, Asare": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Nkansah, Jodie": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "O'Donnell, Matt": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Pacione, Matt": {
+        "department": "Enablement",
+        "level": "Staff Practitioner"
+    },
+    "Pain, Clark": {
+        "department": "Product-Management",
+        "level": "Staff Practitioner"
+    },
+    "Patel, Riya": {
+        "department": "Customer-Success",
+        "level": "Senior Practitioner"
+    },
+    "Patel, Roshni": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Pearce, Ashley": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Pearce, Wayland": {
+        "department": "IT",
+        "level": null
+    },
+    "Pearse, McKinnon": {
+        "department": "Marketing",
+        "level": "Practitioner III"
+    },
+    "Pearson, Kristin": {
+        "department": "Executive",
+        "level": "Director"
+    },
+    "Pollin, Mary": {
+        "department": "Product-Management",
+        "level": "Practitioner III"
+    },
+    "Pritchett, Joshua": {
+        "department": "Product-Management",
+        "level": "Staff Practitioner"
+    },
+    "Redding, Damon": {
+        "department": "Design",
+        "level": "Practitioner III"
+    },
+    "Reele, Max": {
+        "department": "Executive",
+        "level": "Director"
+    },
+    "Reinken, Schuyler": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Reynolds, Justin": {
+        "department": "Software",
+        "level": "Practitioner II"
+    },
+    "Reynolds, Thomas": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Rijal, Basudev": {
+        "department": "IT",
+        "level": "Practitioner II"
+    },
+    "Rodanski, Jeff": {
+        "department": "Enablement",
+        "level": "Staff Practitioner"
+    },
+    "Sadasiv, Lakshmi": {
+        "department": "Enablement",
+        "level": "Senior Practitioner"
+    },
+    "Sanker, Dan": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Sharpe, Norman": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Shouse, Brandon": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Silverman, Michael": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Slater, Kenny": {
+        "department": "Platform-Cyber",
+        "level": "Staff Practitioner"
+    },
+    "Smart, Kyle": {
+        "department": "Software",
+        "level": "Practitioner III"
+    },
+    "Souto, Steven": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Spakes, Clayton": {
+        "department": "Growth",
+        "level": "Practitioner III"
+    },
+    "Sperry, Ian": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Steinbeck, Jeremy": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Strebel, Luke": {
+        "department": "Product-Management",
+        "level": "Staff Practitioner"
+    },
+    "Ten-Kate, Vanessa": {
+        "department": "Marketing",
+        "level": "Senior Practitioner"
+    },
+    "Torres, Pedro": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Tovar, Art": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Tuck, Ryan": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Vecchio, Rachel Del": {
+        "department": "Marketing",
+        "level": "Practitioner III"
+    },
+    "Vennela, Sridhar": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Viray, Carlo": {
+        "department": "Executive",
+        "level": "Director"
+    },
+    "Viray, Jeremy": {
+        "department": "Software",
+        "level": "Practitioner II"
+    },
+    "Walker, Christal": {
+        "department": "Operations",
+        "level": "Practitioner III"
+    },
+    "Wang, Chris": {
+        "department": "Software",
+        "level": "Senior Practitioner"
+    },
+    "Weiss, Nick": {
+        "department": "Product-Management",
+        "level": "Staff Practitioner"
+    },
+    "Whitman, Eric": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    },
+    "Wilkins, Jesse": {
+        "department": "Product-Management",
+        "level": "Senior Practitioner"
+    },
+    "Wills, Jeff": {
+        "department": "Delivery",
+        "level": "Staff Practitioner"
+    },
+    "Yoo, Sally": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Zahid, Tiyyiba": {
+        "department": "Platform-Cyber",
+        "level": "Practitioner III"
+    },
+    "Zubia, Anthony": {
+        "department": "Design",
+        "level": "Senior Practitioner"
+    },
+    "Zubiri, John": {
+        "department": "Platform-Cyber",
+        "level": "Senior Practitioner"
+    }
+}
