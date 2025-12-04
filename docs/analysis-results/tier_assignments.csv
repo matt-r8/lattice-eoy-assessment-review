@@ -1,144 +1,146 @@
-Name,Department,Peer_Average,Tier,Tier_Name
-Andrew Knife,Platform-Cyber,4.91,S,Supreme
-Peter Duong,Software,4.76,S,Supreme
-Luke Strebel,Product-Management,4.75,S,Supreme
-Jeremy Arzuaga,Platform-Cyber,4.72,A+,Exceptional
-Justin Joseph,Platform-Cyber,4.68,A+,Exceptional
-Art Tovar,Product-Management,4.66,A+,Exceptional
-Asare Nkansah,Platform-Cyber,4.64,A+,Exceptional
-Schuyler Reinken,Platform-Cyber,4.64,A+,Exceptional
-Hannah Cheng,Design,4.63,A+,Exceptional
-Roshni Patel,Product-Management,4.63,A+,Exceptional
-Jeff Rodanski,Enablement,4.61,A+,Exceptional
-Rob Monroe,Enablement,4.6,A+,Exceptional
-Matt Pacione,Enablement,4.59,A+,Exceptional
-Bryon Kroger,Executive,4.59,A+,Exceptional
-Chris Brodowski,Platform-Cyber,4.58,A+,Exceptional
-Sharon Hamilton,Customer-Success,4.56,A,Solid Performer
-Christal Walker,Operations,4.56,A,Solid Performer
-Steven Bair,Platform-Cyber,4.56,A,Solid Performer
-Kyle Dozier,Platform-Cyber,4.55,A,Solid Performer
-Kristin Pearson,Executive,4.54,A,Solid Performer
-Jeremy Steinbeck,Platform-Cyber,4.53,A,Solid Performer
-Alexandra Brierton,Design,4.52,A,Solid Performer
-Max Reele,Executive,4.52,A,Solid Performer
-Alex Berner,Product-Management,4.52,A,Solid Performer
-Minh Nguyen,Software,4.52,A,Solid Performer
-Jordan Dilworth,Executive,4.51,A,Solid Performer
-Scott Carlson,Platform-Cyber,4.5,A,Solid Performer
-Becca James,Product-Management,4.48,A,Solid Performer
-Darius DeSpain,Software,4.48,A,Solid Performer
-Ashley Pearce,Platform-Cyber,4.47,A,Solid Performer
-Dylan Bossie,Platform-Cyber,4.47,A,Solid Performer
-Michael Silverman,Software,4.47,A,Solid Performer
-Jeff Wills,Delivery,4.46,A,Solid Performer
-Noah McHugh,Enablement,4.42,A,Solid Performer
-Octavia Leon,Platform-Cyber,4.41,A,Solid Performer
-Jennifer Van Hove,Product-Management,4.41,A,Solid Performer
-David Lamberson,Software,4.41,A,Solid Performer
-Lambo Lamberson,Software,4.41,A,Solid Performer
-Carlo Viray,Executive,4.4,A,Solid Performer
-Brian Jennings,Enablement,4.39,A,Solid Performer
-Ian Sperry,Product-Management,4.39,A,Solid Performer
-Joshua Pritchett,Product-Management,4.38,A,Solid Performer
-Kevan Mordan,Software,4.37,A,Solid Performer
-Sally Yoo,Design,4.35,A,Solid Performer
-Branden Van Derbur,Platform-Cyber,4.35,A,Solid Performer
-Eric Whitman,Platform-Cyber,4.35,A,Solid Performer
-Kenny Slater,Platform-Cyber,4.35,A,Solid Performer
-Steven Souto,Software,4.35,A,Solid Performer
-Coby Almond,Design,4.34,A,Solid Performer
-Wayland Pearce,IT,4.34,A,Solid Performer
-Alden Davidson,Software,4.34,A,Solid Performer
-Hafeez Rahman Mohammed,Platform-Cyber,4.32,A,Solid Performer
-Rachel Del Vecchio,Marketing,4.31,A,Solid Performer
-Joseph Andrews,Executive,4.3,A,Solid Performer
-Ainsilie Hibbard,Delivery,4.28,A,Solid Performer
-Chase Cast,Platform-Cyber,4.27,A,Solid Performer
-John Zubiri,Platform-Cyber,4.26,A,Solid Performer
-Yi Liu,Product-Management,4.25,A,Solid Performer
-Norman Sharpe,Software,4.25,A,Solid Performer
-Vin Foregard,Software,4.25,A,Solid Performer
-Shanna Chen,Growth,4.24,A-,A Player Baseline
-Riya Patel,Customer-Success,4.23,A-,A Player Baseline
-Jesse Wilkins,Product-Management,4.23,A-,A Player Baseline
-Jeff Muller,Executive,4.21,A-,A Player Baseline
-Marc Fishman,Marketing,4.21,A-,A Player Baseline
-Seehyun Kim,Design,4.2,A-,A Player Baseline
-Adam Furtado,Executive,4.2,A-,A Player Baseline
-Paul Nieto,Software,4.2,A-,A Player Baseline
-Mike Gehard,Enablement,4.19,A-,A Player Baseline
-Nick Eissler,Software,4.18,A-,A Player Baseline
-Pooja Jhaveri,Software,4.18,A-,A Player Baseline
-Darla McGraw,Design,4.17,A-,A Player Baseline
-Drew McFarland,Design,4.17,A-,A Player Baseline
-Dave Chapman,Product-Management,4.15,A-,A Player Baseline
-Ben Adinata,Software,4.15,A-,A Player Baseline
-Clark Pain,Product-Management,4.14,A-,A Player Baseline
-Edwin Karaya,Software,4.13,A-,A Player Baseline
-Derek Dombek,Platform-Cyber,4.1,A-,A Player Baseline
-Jake Cook,Platform-Cyber,4.09,A-,A Player Baseline
-Adam Gardner,Software,4.08,A-,A Player Baseline
-Clayton Spakes,Growth,4.07,A-,A Player Baseline
-Chris Wang,Software,4.07,A-,A Player Baseline
-Matt O'Donnell,Design,4.06,A-,A Player Baseline
-Sean Herbert,Platform-Cyber,4.06,A-,A Player Baseline
-Nick Mendiola,Design,4.05,A-,A Player Baseline
-Brent Baumann,Platform-Cyber,4.05,A-,A Player Baseline
-Jerod Culpepper,Platform-Cyber,4.05,A-,A Player Baseline
-Danny Benson,Software,4.05,A-,A Player Baseline
-Mary Pollin,Product-Management,4.04,A-,A Player Baseline
-Damon Redding,Design,4.03,A-,A Player Baseline
-Ann Kung,Product-Management,4.0,A-,A Player Baseline
-Sagar Akre,Design,3.98,A-,A Player Baseline
-Dan Sanker,Platform-Cyber,3.98,A-,A Player Baseline
-Vanessa Ten-Kate,Marketing,3.97,A-,A Player Baseline
-David Croney,Product-Management,3.97,A-,A Player Baseline
-Sal Aziz,Marketing,3.96,A-,A Player Baseline
-Brandon Shouse,Platform-Cyber,3.96,A-,A Player Baseline
-Tiyyiba Zahid,Platform-Cyber,3.96,A-,A Player Baseline
-Thomas Reynolds,Software,3.96,A-,A Player Baseline
-Pedro Torres,Platform-Cyber,3.95,A-,A Player Baseline
-Nick Weiss,Product-Management,3.91,A-,A Player Baseline
-Justin Reynolds,Software,3.91,A-,A Player Baseline
-Cara McLean,Marketing,3.9,A-,A Player Baseline
-Drew Fugate,Software,3.88,A-,A Player Baseline
-Dave Blotter,Platform-Cyber,3.87,A-,A Player Baseline
-Delaney Coveno,Software,3.87,A-,A Player Baseline
-Paul Fretz,Software,3.86,A-,A Player Baseline
-Mases Krikorian,Software,3.85,A-,A Player Baseline
-Chris Johns,Platform-Cyber,3.83,A-,A Player Baseline
-Kevin Nash,Platform-Cyber,3.83,A-,A Player Baseline
-Erica Chang,Design,3.82,A-,A Player Baseline
-Abbie Burton,Product-Management,3.82,A-,A Player Baseline
-Kevin Gates,Design,3.81,A-,A Player Baseline
-Jennifer Lopez,Executive,3.79,A-,A Player Baseline
-Jodie Nkansah,Platform-Cyber,3.75,A-,A Player Baseline
-Sridhar Vennela,Platform-Cyber,3.75,A-,A Player Baseline
-Tom Anastasio,Design,3.73,A-,A Player Baseline
-Michael Estoy,Product-Management,3.72,A-,A Player Baseline
-Jacobi Ayala,Software,3.72,A-,A Player Baseline
-Jonathan Van Dalen,Design,3.71,A-,A Player Baseline
-Coty Allen,Platform-Cyber,3.7,A-,A Player Baseline
-Dan Bitter,Software,3.7,A-,A Player Baseline
-Roshni Bhanderi,Software,3.68,A-,A Player Baseline
-Shubham Goel,Product-Management,3.67,A-,A Player Baseline
-Darrell Mudd,PeopleOps,3.66,A-,A Player Baseline
-Benjamin Alvarez,Platform-Cyber,3.64,A-,A Player Baseline
-Anthony Zubia,Design,3.6,A-,A Player Baseline
-Cason Brinson,Software,3.56,A-,A Player Baseline
-Bryce Nguonly,Software,3.55,A-,A Player Baseline
-McKinnon Pearse,Marketing,3.52,A-,A Player Baseline
-Nick Luckey,Platform-Cyber,3.52,A-,A Player Baseline
-Evan Mladinov,Product-Management,3.51,A-,A Player Baseline
-Jeremy Viray,Software,3.51,A-,A Player Baseline
-David Alvarado,Software,3.48,A-,A Player Baseline
-Samuel McQueen,Platform-Cyber,3.36,A-,A Player Baseline
-Basudev Rijal,IT,3.26,A-,A Player Baseline
-Cory Hurlbut,Software,3.22,A-,A Player Baseline
-Abel A A Hernandez,Product-Management,3.18,A-,A Player Baseline
-Ryan Tuck,Software,3.18,A-,A Player Baseline
-Michael Maye,Software,3.08,A-,A Player Baseline
-Dylan Doub,Platform-Cyber,3.04,A-,A Player Baseline
-Kyle Smart,Software,2.83,B,Developing
-Shawn Kilroy,Customer-Success,2.44,B,Developing
+Name,Department,Tier,Tier_Name,Peer_Average
+Andrew Knife,Platform-Cyber,A,Solid Performer,4.91
+Peter Duong,Software,A,Solid Performer,4.76
+Luke Strebel,Product-Management,A,Solid Performer,4.75
+Jeremy Arzuaga,Platform-Cyber,A,Solid Performer,4.72
+Justin Joseph,Platform-Cyber,A,Solid Performer,4.68
+Art Tovar,Product-Management,A,Solid Performer,4.66
+Asare Nkansah,Platform-Cyber,A,Solid Performer,4.64
+Schuyler Reinken,Platform-Cyber,A,Solid Performer,4.64
+Hannah Cheng,Design,A,Solid Performer,4.63
+Roshni Patel,Product-Management,A,Solid Performer,4.63
+Jeff Rodanski,Enablement,A,Solid Performer,4.61
+Rob Monroe,Enablement,A,Solid Performer,4.60
+Matt Pacione,Enablement,A,Solid Performer,4.59
+Bryon Kroger,Executive,A,Solid Performer,4.59
+Chris Brodowski,Platform-Cyber,A,Solid Performer,4.58
+Sharon Hamilton,Customer-Success,A,Solid Performer,4.56
+Christal Walker,Operations,A,Solid Performer,4.56
+Steven Bair,Platform-Cyber,A,Solid Performer,4.56
+Kyle Dozier,Platform-Cyber,A,Solid Performer,4.55
+Yechiel Kalmenson,Software,A,Solid Performer,4.55
+Ron Golan,Product-Management,A,Solid Performer,4.55
+Kristin Pearson,Executive,A,Solid Performer,4.54
+Jeremy Steinbeck,Platform-Cyber,A,Solid Performer,4.53
+Alexandra Brierton,Design,A,Solid Performer,4.52
+Max Reele,Executive,A,Solid Performer,4.52
+Alex Berner,Product-Management,A,Solid Performer,4.52
+Minh Nguyen,Software,A,Solid Performer,4.52
+Jordan Dilworth,Executive,A,Solid Performer,4.51
+Scott Carlson,Platform-Cyber,A,Solid Performer,4.50
+Becca James,Product-Management,B,Developing,4.48
+Darius DeSpain,Software,B,Developing,4.48
+Ashley Pearce,Platform-Cyber,B,Developing,4.47
+Dylan Bossie,Platform-Cyber,B,Developing,4.47
+Michael Silverman,Software,B,Developing,4.47
+Jeff Wills,Delivery,B,Developing,4.46
+Noah McHugh,Enablement,B,Developing,4.42
+Octavia Leon,Platform-Cyber,B,Developing,4.41
+Jennifer Van Hove,Product-Management,B,Developing,4.41
+David Lamberson,Software,B,Developing,4.41
+Lambo Lamberson,Software,B,Developing,4.41
+Carlo Viray,Executive,B,Developing,4.40
+Brian Jennings,Enablement,B,Developing,4.39
+Ian Sperry,Product-Management,B,Developing,4.39
+Joshua Pritchett,Product-Management,B,Developing,4.38
+Kevan Mordan,Software,B,Developing,4.37
+Sally Yoo,Design,B,Developing,4.35
+Branden Van Derbur,Platform-Cyber,B,Developing,4.35
+Eric Whitman,Platform-Cyber,B,Developing,4.35
+Kenny Slater,Platform-Cyber,B,Developing,4.35
+Steven Souto,Software,B,Developing,4.35
+Coby Almond,Design,B,Developing,4.34
+Wayland Pearce,IT,B,Developing,4.34
+Alden Davidson,Software,B,Developing,4.34
+Hafeez Rahman Mohammed,Platform-Cyber,B,Developing,4.32
+Rachel Del Vecchio,Marketing,B,Developing,4.31
+Joseph Andrews,Executive,B,Developing,4.30
+Ainsilie Hibbard,Delivery,B,Developing,4.28
+Chase Cast,Platform-Cyber,B,Developing,4.27
+John Zubiri,Platform-Cyber,B,Developing,4.26
+Yi Liu,Product-Management,B,Developing,4.25
+Norman Sharpe,Software,B,Developing,4.25
+Vin Foregard,Software,B,Developing,4.25
+Shanna Chen,Growth,B,Developing,4.24
+Riya Patel,Customer-Success,B,Developing,4.23
+Jesse Wilkins,Product-Management,B,Developing,4.23
+Jeff Muller,Executive,B,Developing,4.21
+Marc Fishman,Marketing,B,Developing,4.21
+Seehyun Kim,Design,B,Developing,4.20
+Adam Furtado,Executive,B,Developing,4.20
+Paul Nieto,Software,B,Developing,4.20
+Mike Gehard,Enablement,B,Developing,4.19
+Nick Eissler,Software,B,Developing,4.18
+Pooja Jhaveri,Software,B,Developing,4.18
+Darla McGraw,Design,B,Developing,4.17
+Drew McFarland,Design,B,Developing,4.17
+Dave Chapman,Product-Management,B,Developing,4.15
+Ben Adinata,Software,B,Developing,4.15
+Clark Pain,Product-Management,B,Developing,4.14
+Edwin Karaya,Software,B,Developing,4.13
+Derek Dombek,Platform-Cyber,B,Developing,4.10
+Jake Cook,Platform-Cyber,B,Developing,4.09
+Adam Gardner,Software,B,Developing,4.08
+Clayton Spakes,Growth,B,Developing,4.07
+Chris Wang,Software,B,Developing,4.07
+Matt O'Donnell,Design,B,Developing,4.06
+Sean Herbert,Platform-Cyber,B,Developing,4.06
+Nick Mendiola,Design,B,Developing,4.05
+Brent Baumann,Platform-Cyber,B,Developing,4.05
+Jerod Culpepper,Platform-Cyber,B,Developing,4.05
+Danny Benson,Software,B,Developing,4.05
+Mary Pollin,Product-Management,B,Developing,4.04
+Damon Redding,Design,B,Developing,4.03
+Ann Kung,Product-Management,B,Developing,4.00
+Sagar Akre,Design,C,Needs Immediate Improvement,3.98
+Dan Sanker,Platform-Cyber,C,Needs Immediate Improvement,3.98
+Vanessa Ten-Kate,Marketing,C,Needs Immediate Improvement,3.97
+David Croney,Product-Management,C,Needs Immediate Improvement,3.97
+Sal Aziz,Marketing,C,Needs Immediate Improvement,3.96
+Brandon Shouse,Platform-Cyber,C,Needs Immediate Improvement,3.96
+Tiyyiba Zahid,Platform-Cyber,C,Needs Immediate Improvement,3.96
+Thomas Reynolds,Software,C,Needs Immediate Improvement,3.96
+Pedro Torres,Platform-Cyber,C,Needs Immediate Improvement,3.95
+Nick Weiss,Product-Management,C,Needs Immediate Improvement,3.91
+Justin Reynolds,Software,C,Needs Immediate Improvement,3.91
+Cara McLean,Marketing,C,Needs Immediate Improvement,3.90
+Drew Fugate,Software,C,Needs Immediate Improvement,3.88
+Dave Blotter,Platform-Cyber,C,Needs Immediate Improvement,3.87
+Delaney Coveno,Software,C,Needs Immediate Improvement,3.87
+Paul Fretz,Software,C,Needs Immediate Improvement,3.86
+Mases Krikorian,Software,C,Needs Immediate Improvement,3.85
+Chris Johns,Platform-Cyber,C,Needs Immediate Improvement,3.83
+Kevin Nash,Platform-Cyber,C,Needs Immediate Improvement,3.83
+Erica Chang,Design,C,Needs Immediate Improvement,3.82
+Abbie Burton,Product-Management,C,Needs Immediate Improvement,3.82
+Kevin Gates,Design,C,Needs Immediate Improvement,3.81
+Jennifer Lopez,Executive,C,Needs Immediate Improvement,3.79
+Jodie Nkansah,Platform-Cyber,C,Needs Immediate Improvement,3.75
+Sridhar Vennela,Platform-Cyber,C,Needs Immediate Improvement,3.75
+Tom Anastasio,Design,C,Needs Immediate Improvement,3.73
+Michael Estoy,Product-Management,C,Needs Immediate Improvement,3.72
+Jacobi Ayala,Software,C,Needs Immediate Improvement,3.72
+Jonathan Van Dalen,Design,C,Needs Immediate Improvement,3.71
+Coty Allen,Platform-Cyber,C,Needs Immediate Improvement,3.70
+Dan Bitter,Software,C,Needs Immediate Improvement,3.70
+Roshni Bhanderi,Software,C,Needs Immediate Improvement,3.68
+Shubham Goel,Product-Management,C,Needs Immediate Improvement,3.67
+Darrell Mudd,PeopleOps,C,Needs Immediate Improvement,3.66
+Benjamin Alvarez,Platform-Cyber,C,Needs Immediate Improvement,3.64
+Anthony Zubia,Design,C,Needs Immediate Improvement,3.60
+Cason Brinson,Software,C,Needs Immediate Improvement,3.56
+Bryce Nguonly,Software,C,Needs Immediate Improvement,3.55
+McKinnon Pearse,Marketing,C,Needs Immediate Improvement,3.52
+Nick Luckey,Platform-Cyber,C,Needs Immediate Improvement,3.52
+Evan Mladinov,Product-Management,C,Needs Immediate Improvement,3.51
+Jeremy Viray,Software,C,Needs Immediate Improvement,3.51
+David Alvarado,Software,D,Needs Significant Improvement,3.48
+Samuel McQueen,Platform-Cyber,D,Needs Significant Improvement,3.36
+Basudev Rijal,IT,D,Needs Significant Improvement,3.26
+Cory Hurlbut,Software,D,Needs Significant Improvement,3.22
+Abel A A Hernandez,Product-Management,D,Needs Significant Improvement,3.18
+Ryan Tuck,Software,D,Needs Significant Improvement,3.18
+Michael Maye,Software,D,Needs Significant Improvement,3.08
+Dylan Doub,Platform-Cyber,D,Needs Significant Improvement,3.04
+Kyle Smart,Software,D,Needs Significant Improvement,2.83
+Shawn Kilroy,Customer-Success,D,Needs Significant Improvement,2.44

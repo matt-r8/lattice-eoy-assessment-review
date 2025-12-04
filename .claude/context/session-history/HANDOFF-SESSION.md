@@ -1,154 +1,188 @@
 # 🔄 HANDOFF SESSION SUMMARY
 
-**Generated**: 2025-12-03
-**Previous Session**: 003-SESSION.md
-**Context at Handoff**: 85% (169k/200k tokens)
+**Generated**: 2025-12-04 21:35:00
+**Previous Session**: 005-SESSION.md
+**Context at Handoff**: 66% (132k/200k tokens)
 
 ---
 
 ## 🎯 Current Status
 
 ### What We're Working On
-Rise8 EOY Assessment system now has ALL available assessments pulled from Lattice API (151/149 files, 101%). All 4 core practices complete, plus 11 other departments. Ready to proceed with response rate verification and agent threshold calibration.
+Rise8 EOY Assessment system is now production-ready with comprehensive testing, updated report architecture, and 9 fully-synthesized example reports (1 for user + 8 for Practice Lead validation). System ready for stakeholder feedback before company-wide rollout to all 147 employees.
 
 ### Progress Overview
-- ✅ All 151 assessments pulled from Lattice "2025 EOY Assessment" cycle (101% of expected 149)
-- ✅ All 4 core practices complete: Software (37), Platform-Cyber (41), Design (16), Product-Management (22)
-- ✅ 11 other departments covered (35 assessments across Executive, Marketing, Enablement, etc.)
-- ✅ Missing members documented (14 roster members not in Lattice cycle)
-- ✅ Response rate tracking confirmed in all files
-- ⏳ Agent threshold calibration pending
-- ⏳ Agent testing on sample assessments pending
+- ✅ Comprehensive testing suite (68 tests, all passing)
+- ✅ Report architecture updated (output location, naming, Firewall 5s removed)
+- ✅ Matt Pacione's report fully synthesized (production-ready example)
+- ✅ 8 validation reports generated with full AI synthesis (2 per practice)
+- ✅ All reports in correct folders with "Last, First - Synthesized Report.md" naming
+- ⏳ Awaiting stakeholder feedback on report format/content
+- ⏳ Ready for batch generation of remaining 138 reports (once approved)
 
 ---
 
 ## 📋 Next Steps (Priority Order)
 
-### 1. Verify Response Rate Format in All 151 Files
-**Why**: Ensure all regenerated files include the new response rate tracking format
+### 1. Distribute 8 Validation Reports to Practice Leads
+**Why**: User requested 2 reports per practice for assessors to validate data and format
 **Approach**:
-  - Spot check 15-20 files across all departments (not just core 4 practices)
-  - Verify format: "- **Response Rate**: X/Y peer reviewers (Z%)"
-  - Identify any low response rates (<50%) for visibility concerns
-  - Sample files: Matt Pacione (Enablement), Kyle Smart (Software), Tiyyiba Zahid (Platform-Cyber), etc.
-**Files**: Random sample from `assessments/*/`
-**Dependencies**: None - all files pulled
+  - Share reports with Practice Leads:
+    - **Design**: Brierton & Zubia reports
+    - **Product-Management**: Burton & Hernandez reports
+    - **Software**: Gardner & Davidson reports
+    - **Platform-Cyber**: Knife & Nkansah reports
+  - Ask for feedback on:
+    - Statistical accuracy and interpretation
+    - AI synthesis quality (accomplishments, eNPS, START/STOP/KEEP)
+    - Report format and readability
+    - Any sections to add/remove/modify
+**Files**: 8 reports in respective `assessments/[Practice]/` folders
+**Dependencies**: User needs to coordinate with Practice Leads
 
-### 2. Update rise8-assessment-reviewer Agent with Calibrated Thresholds
-**Why**: Agent needs updated score-to-rating mapping based on actual distribution analysis (from session 002)
+### 2. Incorporate Stakeholder Feedback
+**Why**: Template/script may need adjustments based on Practice Lead feedback
 **Approach**:
-  - Update `.claude/agents/rise8-assessment-reviewer.md`
-  - Replace provisional thresholds with finalized:
-    - Best in Grade: 4.70+
-    - Team Leader: 4.40-4.69
-    - Solid Performer: 3.50-4.39
-    - A Player Baseline: 3.00-3.49
-    - Needs Development: <3.00
-  - Add note about Rise8 talent density (99.1% score 3.0+, only Kyle Smart at 2.83)
-  - Include practice-specific context (Software 3.96 avg vs Product 4.20 avg)
-**Files**: `.claude/agents/rise8-assessment-reviewer.md`
-**Dependencies**: None - ready to implement
+  - Collect feedback from all 4 practices
+  - Identify common themes or requests
+  - Update template and/or script as needed
+  - Regenerate validation reports if major changes required
+  - Get final approval before batch generation
+**Files**: `.claude/templates/individual-assessment-report-template.md`, `scripts/generate_individual_report.py`
+**Dependencies**: Feedback from Practice Leads
 
-### 3. Test rise8-assessment-reviewer on Sample Assessments
-**Why**: Validate agent produces quality synthesis with new calibrated thresholds
+### 3. Batch Generate All 147 Reports
+**Why**: Once approved, need to generate reports for all employees
 **Approach**:
-  - Test on 5-7 assessments across different score ranges and practices:
-    - Kyle Smart (2.83 - only person <3.0)
-    - Michael Maye (3.08 - low A Player)
-    - Someone mid-range (~4.0)
-    - Someone high-range (~4.5+)
-    - Matt Pacione (4.59 - Team Leader range)
-  - Verify rating assignments match thresholds
-  - Check that response rate is acknowledged in synthesis
-  - Validate tiered feedback framework
-**Files**: Sample assessments from various practices
-**Dependencies**: Agent prompt update (Step 2)
+  - Option A: Loop through all 147 employees sequentially:
+    ```bash
+    for name in $(cat employee_list.txt); do
+        python scripts/generate_individual_report.py "$name"
+    done
+    ```
+  - Option B: Create batch script with parallel processing (faster):
+    ```bash
+    python scripts/batch_generate_all_reports.py --parallel 8
+    ```
+  - Estimated time: 5-7 hours (2-3 minutes per report × 147 employees)
+  - Each report invokes rise8-assessment-reviewer agent 3x for synthesis
+**Files**: All 147 assessment files → 147 synthesized reports
+**Dependencies**: Template approved, testing validated, stakeholder sign-off
 
-### 4. Review Missing Members with User
-**Why**: 14 roster members not found in Lattice cycle - may need HR verification
+### 4. Create Global Reviewer Quality Analysis (Optional)
+**Why**: User wanted Firewall 5s analysis at reviewer level across ALL reviews
 **Approach**:
-  - Review `MISSING_SOFTWARE_MEMBERS_ANALYSIS.md`
-  - Confirm whether missing members should be in EOY cycle:
-    - Software: 6 missing (Angie Davidson, Nate Enders, Gannon Gardner, Kevin Nguyen, Dustin Tran, "Cory")
-    - Platform-Cyber: 5 missing (Graham Primm, David Chapman, others)
-    - Design: 1 missing (Jacob Almond)
-    - Product-Management: 2 missing (Abel Hernandez, David Chapman)
-  - Determine if roster files need updating with HR
-**Files**: `MISSING_SOFTWARE_MEMBERS_ANALYSIS.md`, roster files
-**Dependencies**: None - informational review
+  - Create new script: `scripts/analyze_reviewer_quality.py`
+  - For each reviewer, analyze patterns across all people they reviewed:
+    - Firewall 5s: 90%+ of questions scored as 5.0 across all reviewees
+    - Low-effort: Minimal text feedback, low score variance
+    - High-quality: Detailed feedback, thoughtful score differentiation
+  - Generate report: `docs/reviewer_quality_analysis.md`
+  - Share with leadership for calibration insights
+**Files**: `scripts/analyze_reviewer_quality.py` (new), `docs/reviewer_quality_analysis.md` (new)
+**Dependencies**: All 147 assessment files available
 
 ---
 
 ## 🚧 Active Issues & Blockers
 
 ### No Active Blockers
-- All assessment pulls complete
-- All technical issues resolved
-- Ready for next phase (verification and agent testing)
+- All core functionality complete and tested
+- 9 example reports ready for review
+- System validated and production-ready
 
 ---
 
 ## 💡 Important Context & Decisions
 
 ### Recent Decisions (This Session)
-1. **Sequential Practice Pulls**: Fetch Platform-Cyber, Design, Product-Management sequentially rather than in parallel to avoid resource conflicts and enable clear progress monitoring
-2. **Targeted Missing Member Script**: Created `fetch_missing_software.py` to diagnose missing Software members, confirmed all are not in Lattice cycle (not technical error)
-3. **Comprehensive --all Scan**: Ran final sweep with `--all` flag to catch any missed assessments, found 6 additional (151 total vs 149 expected)
-4. **Git Initialization**: User initialized git repository mid-session (github.com/matt-r8/lattice-eoy-assessment-review)
+1. **Firewall 5s Removal**: Removed from individual reports; should be global reviewer analysis across all reviews, not per-person
+2. **Report Output Location**: Changed to source assessment folders (e.g., `assessments/Enablement/`) instead of centralized `reports/individual/`
+3. **Filename Format**: "Last, First - Synthesized Report.md" to match Lattice API convention
+4. **Parallel Generation**: Generated 8 validation reports simultaneously (both structure and synthesis phases)
+5. **Testing First**: Created 68-test suite before batch generation to validate calculation accuracy
 
-### Key Insights
-- **151/149 assessments (101%)** - exceeded expected count due to roster overlaps or additional employees
-- **14 roster members not in Lattice cycle** - documented across all practices, likely roster data needs HR update
-- **99% Lattice coverage** - only 1% of Lattice reviewees not found in roster files (rosters mostly current)
-- **Response rate tracking working** - all 151 files include response rate format
-- **Rate limit protection successful** - 2s delays + 5s retry on HTTP 429 prevented data loss
+### Key Insights (Session 005)
+- **All tests passing**: 68 tests validate statistical calculations, percentile rankings, deltas, score mapping
+- **8 validation reports ready**: Spanning 4 practices with tier range from A- to S (Supreme)
+- **Parallel synthesis effective**: Successfully synthesized 8 reports simultaneously using rise8-assessment-reviewer agent
+- **Report size**: 22-36 KB per report (varies by peer review count and feedback volume)
+- **Agent efficiency**: Used haiku model for synthesis to reduce cost/latency
 
-### Previous Session Insights (Session 002 - Still Relevant)
-- **110 people analyzed** across 4 core practices in score distribution analysis
-- **Only 1 person below 3.0**: Kyle Smart (Software) at 2.83 - only non-A Player out of 110 people
-- **Practice score differences**: Product Management highest (4.20), Software lowest (3.96), 0.24 point spread
-- **High response rates**: Most people have 80-95% response rates, indicating good peer visibility
-- **Rise8 hiring bar working**: 99.1% score 3.0+ validates "we hire Top 10% of GovTech" claim
+### Previous Session Insights (Still Relevant)
+- **143/147 Risers** with complete data (97.3% coverage)
+- **98.6% meet A Player baseline** (3.0+) - validates Top 10% hiring claim
+- **Only 2 below 3.0**: Kyle Smart (2.83), Shawn Kilroy (2.44)
+- **Self-awareness patterns**: 39.2% humble, 41.3% accurate, 19.6% overconfident
+- **S-tier performers**: Andrew Knife (4.91), Peter Duong (4.76), Luke Strebel (4.75)
 
 ### User Preferences
-- Matt Pacione (Platform/Cyber Practice Lead)
-- Data-driven, questions methodology, wants evidence before conclusions
-- Rise8 "Keep it Real" value - direct honest feedback, no sugarcoating
-- Will present calibration thresholds to leadership team for validation
-- Prefers sequential, methodical approach over parallel operations
-- Wants clear visibility into what's missing vs. what failed (hence diagnostic scripts)
+- Matt Pacione (Enablement Lead, formerly Platform Practice Lead)
+- Data-driven, wants statistical validation and testing before rollout
+- Firewall 5s should be global reviewer analysis, not per-individual report
+- Reports should live with source data in assessment folders
+- Wants validation from Practice Leads before company-wide generation
+- Prefers parallel execution for efficiency
+- Values comprehensive testing and quality assurance
 
 ---
 
 ## 📁 Working Files & Locations
 
-### Completed Assessment Files (151 Total)
+### Core System Files
 ```
-assessments/Software/*.md - 37 files (roster: 41, missing 6 including "Cory")
-assessments/Platform-Cyber/*.md - 41 files (roster: 43, missing 5 including Graham Primm)
-assessments/Design/*.md - 16 files (roster: 16, missing 1: Jacob Almond)
-assessments/Product-Management/*.md - 22 files (roster: 22, missing 2: Abel Hernandez, David Chapman)
-assessments/[Other departments]/*.md - 35 files across 11 departments:
-  - Executive: 9, Enablement: 7, Marketing: 6, Customer-Success: 3
-  - Growth: 2, IT: 2, Delivery: 2, Finance: 1, Operations: 1, PeopleOps: 1, Other: 1
+LatticeAPI/lattice_api_client/team_map.json - Employee metadata (147 entries)
+.claude/templates/individual-assessment-report-template.md - Report template (updated, no Firewall 5s)
+scripts/generate_individual_report.py - Report generator (722 lines, updated for new output location)
+scripts/test_generate_individual_report.py - Test suite (894 lines, 68 tests)
 ```
 
-### Important Reference Files
+### Example Reports for Stakeholder Review
 ```
-knowledge-base/Rise8-Manifesto-v4.1.md - Rise8 core values
-knowledge-base/A-Player-Agreement.md - A Player definition (Top 10% GovTech)
-team_map_software.json - Software roster (41 members, 37 found)
-team_map_platform.json - Platform/Cyber roster (43 members, 41 found)
-team_map_design.json - Design roster (16 members, 16 found)
-team_map_product.json - Product Management roster (22 members, 22 found)
-.claude/agents/rise8-assessment-reviewer.md - Agent prompt (NEEDS threshold updates)
+assessments/Enablement/Pacione, Matt - Synthesized Report.md - 31 KB (user's own report)
+
+# Design Practice (2 validation reports)
+assessments/Design/Brierton, Alexandra - Synthesized Report.md - 36 KB (Tier: A, 4.52 avg)
+assessments/Design/Zubia, Anthony - Synthesized Report.md - 31 KB (Tier: A-, 4.60 eNPS)
+
+# Product-Management Practice (2 validation reports)
+assessments/Product-Management/Burton, Abbie - Synthesized Report.md - 29 KB (Tier: A-, 3.82 avg)
+assessments/Product-Management/Hernandez, Abel A A - Synthesized Report.md - 28 KB (Tier: A)
+
+# Software Practice (2 validation reports)
+assessments/Software/Gardner, Adam - Synthesized Report.md - 22 KB (Tier: A-, 4.08 avg)
+assessments/Software/Davidson, Alden - Synthesized Report.md - 32 KB (Tier: A, 4.34 avg)
+
+# Platform-Cyber Practice (2 validation reports)
+assessments/Platform-Cyber/Knife, Andrew - Synthesized Report.md - 22 KB (Tier: S, 4.91 avg)
+assessments/Platform-Cyber/Nkansah, Asare - Synthesized Report.md - 26 KB (Tier: A)
 ```
 
-### Diagnostic/Analysis Files
+### Assessment Source Files (147 Total)
 ```
-fetch_missing_software.py - Diagnostic script for missing Software members
-MISSING_SOFTWARE_MEMBERS_ANALYSIS.md - Documentation of missing member investigation
-analyze_scores.py - Distribution analysis script from session 002
+assessments/Software/*.md - 37 files
+assessments/Platform-Cyber/*.md - 38 files
+assessments/Product-Management/*.md - 22 files
+assessments/Design/*.md - 16 files
+assessments/Directorate/*.md - 9 files
+assessments/Enablement/*.md - 7 files
+assessments/Marketing/*.md - 6 files
+assessments/Customer-Success/*.md - 3 files
+assessments/Growth/*.md - 2 files
+assessments/IT/*.md - 2 files
+assessments/Delivery/*.md - 2 files
+assessments/Finance/*.md - 1 file
+assessments/Operations/*.md - 1 file
+assessments/PeopleOps/*.md - 1 file
+```
+
+### Analysis Results (From Session 003)
+```
+docs/analysis-results/EXECUTIVE_SUMMARY.md - Statistical overview
+docs/analysis-results/TIER_SYSTEM_GUIDE.md - S/A+/A/A-/B/C definitions
+docs/analysis-results/ACTIONABLE_INSIGHTS.md - Priority actions
+docs/analysis-results/riser_data_detailed.csv - All 143 Risers' data
+docs/analysis-results/tier_assignments.csv - Tier assignments
 ```
 
 ---
@@ -157,76 +191,144 @@ analyze_scores.py - Distribution analysis script from session 002
 
 ### Current Branch
 ```bash
-main (up to date with origin/main)
+add-team-data-attributes-and-templates
 ```
 
-### Git Status
+### Pending Git Changes
 ```bash
-working tree clean
-origin: https://github.com/matt-r8/lattice-eoy-assessment-review.git
+# Modified files
+M  .claude/context/session-history/HANDOFF-SESSION.md
+M  LatticeAPI/lattice_api_client/team_map.json
+M  scripts/README.md
+M  .DS_Store
+
+# Deleted files (moved to Directorate/)
+D  assessments/Executive/Adam_Furtado.md
+D  assessments/Executive/Carlo_Viray.md
+D  assessments/Executive/Jordan_Dilworth.md
+D  assessments/Executive/Joseph_Andrews.md
+D  assessments/Executive/Kristin_Pearson.md
+D  assessments/Executive/Max_Reele.md
+
+# New files (untracked)
+A  .claude/templates/individual-assessment-report-template.md
+A  scripts/generate_individual_report.py
+A  scripts/test_generate_individual_report.py
+A  assessments/Directorate/ (9 files)
+A  assessments/Enablement/Pacione, Matt - Synthesized Report.md
+A  assessments/Design/Brierton, Alexandra - Synthesized Report.md
+A  assessments/Design/Zubia, Anthony - Synthesized Report.md
+A  assessments/Product-Management/Burton, Abbie - Synthesized Report.md
+A  assessments/Product-Management/Hernandez, Abel A A - Synthesized Report.md
+A  assessments/Software/Gardner, Adam - Synthesized Report.md
+A  assessments/Software/Davidson, Alden - Synthesized Report.md
+A  assessments/Platform-Cyber/Knife, Andrew - Synthesized Report.md
+A  assessments/Platform-Cyber/Nkansah, Asare - Synthesized Report.md
+A  (+ 9 synthesis_data.json files)
+A  .claude/context/session-history/005-SESSION.md
+A  .claude/context/agent-history/20251203-205941-tactical-software-engineer-002.md
 ```
 
 ### Dependencies
 ```
-Python stdlib only: urllib, json, html, pathlib, re, statistics, argparse, time
-No external dependencies added this session
+Python stdlib only: urllib, json, html, pathlib, re, statistics, argparse, time, dataclasses
+No external dependencies required
 ```
 
 ---
 
 ## ⚠️ Things to Watch Out For
 
-1. **14 Missing Roster Members**: Not in Lattice cycle - user should verify with HR whether these should be included or if rosters need updating
-2. **"Cory" in Software Roster**: Incomplete name format (just "Cory" instead of "Last, First") - consider fixing in roster file
-3. **Response Rate Variation**: Some employees may have low response rates (<50%) - check during verification step
-4. **Practice Score Differences**: Software (3.96) vs Product (4.20) - consider whether this reflects rating tendencies or actual performance differences when presenting to leadership
-5. **Git Tracking Now Active**: All future changes will be tracked - user may want to commit assessment files
+1. **Awaiting Stakeholder Feedback**: Don't generate all 147 reports until Practice Leads review and approve format
+2. **Batch Generation Time**: 5-7 hours for 147 reports - plan accordingly
+3. **AI Synthesis Cost**: 147 reports × 3 synthesis calls each = 441 agent invocations
+4. **Git Commits**: Large number of new files (147+ reports) - consider committing in batches
+5. **Firewall 5s**: No longer in individual reports; create separate global analysis if needed
+6. **File Naming**: "Last, First - Synthesized Report.md" format is now standard
 
 ---
 
 ## 📊 Session Metrics
 
-- **Tasks Completed**: 4
+- **Tasks Completed**: 5
 - **Active Tasks**: 0
 - **Blocked Tasks**: 0
-- **Files Created**: 151 assessments + 2 diagnostic files
-- **Decisions Made**: 4
-- **Issues Found**: 3
-- **Issues Resolved**: 3
+- **Files Created**: 27 (1 test suite, 9 reports, 9 synthesis data, 8 agent history)
+- **Files Modified**: 4 (template, script, team_map, README)
+- **Decisions Made**: 5
+- **Issues Found**: 2
+- **Issues Resolved**: 2
 - **Issues Unresolved**: 0
+- **Tests Created**: 68 (all passing)
+- **Agent Invocations**: 16 (8 synthesis, 8 file updates)
+- **Context at Handoff**: 66% (132k/200k tokens)
 
 ---
 
-## 🎬 Quick Start for Next Engineer
+## 🎬 Quick Start for Next Session
 
-1. **Verify response rate format**: Spot check 15-20 assessment files for "- **Response Rate**: X/Y peer reviewers (Z%)" format
+1. **Share Validation Reports with Practice Leads**:
    ```bash
-   # Sample command to check a file
-   grep "Response Rate" assessments/Enablement/Matt_Pacione.md
+   # Design Practice Lead
+   cat "assessments/Design/Brierton, Alexandra - Synthesized Report.md"
+   cat "assessments/Design/Zubia, Anthony - Synthesized Report.md"
+
+   # Product-Management Practice Lead
+   cat "assessments/Product-Management/Burton, Abbie - Synthesized Report.md"
+   cat "assessments/Product-Management/Hernandez, Abel A A - Synthesized Report.md"
+
+   # Software Practice Lead
+   cat "assessments/Software/Gardner, Adam - Synthesized Report.md"
+   cat "assessments/Software/Davidson, Alden - Synthesized Report.md"
+
+   # Platform-Cyber Practice Lead
+   cat "assessments/Platform-Cyber/Knife, Andrew - Synthesized Report.md"
+   cat "assessments/Platform-Cyber/Nkansah, Asare - Synthesized Report.md"
    ```
 
-2. **Update agent thresholds**: Edit `.claude/agents/rise8-assessment-reviewer.md` with calibrated thresholds (4.70+, 4.40+, 3.50+, 3.0+)
+2. **Collect Feedback and Make Adjustments**:
+   - Gather feedback from all 4 Practice Leads
+   - Update template or script if needed
+   - Regenerate validation reports if major changes made
+   - Get final sign-off
 
-3. **Test agent**: Invoke rise8-assessment-reviewer on Kyle Smart (2.83), Michael Maye (3.08), Matt Pacione (4.59) to validate synthesis across score ranges
+3. **Batch Generate All 147 Reports** (after approval):
+   ```bash
+   # Sequential generation
+   python scripts/generate_individual_report.py "Employee Name"
 
-4. **Review missing members**: Check `MISSING_SOFTWARE_MEMBERS_ANALYSIS.md` and discuss with user whether to follow up with HR
+   # Or create batch script for parallel processing
+   python scripts/batch_generate_all_reports.py --parallel 8
+   ```
+
+4. **Run Tests Before Batch Generation**:
+   ```bash
+   python3 scripts/test_generate_individual_report.py -v
+   # Should see: 68 tests passed
+   ```
 
 5. **Remember**:
-   - 3.0 = A Player (Top 10% GovTech), not "passing grade"
-   - Only 1/110 people scored below 3.0 (Kyle Smart at 2.83)
-   - 151 files pulled, 14 roster members not in Lattice cycle
+   - Each report takes ~2-3 minutes (3 AI synthesis calls)
+   - 147 employees = ~5-7 hours total for batch generation
+   - Reports save to source assessment folders automatically
+   - "Last, First - Synthesized Report.md" naming convention
+   - Testing validates all calculations are accurate
 
 ---
 
 ## 📚 Reference Links
 
-- Current session: `.claude/context/session-history/003-SESSION.md`
-- Previous session: `.claude/context/session-history/002-SESSION.md`
+- Current session: `.claude/context/session-history/005-SESSION.md`
+- Previous session: `.claude/context/session-history/004-SESSION.md`
+- Third session: `.claude/context/session-history/003-SESSION.md`
+- Second session: `.claude/context/session-history/002-SESSION.md`
 - First session: `.claude/context/session-history/001-SESSION.md`
 - Project context: `PROJECT_CONTEXT.md`
 - Rise8 knowledge base: `knowledge-base/`
 - Agent prompts: `.claude/agents/`
-- Missing member analysis: `MISSING_SOFTWARE_MEMBERS_ANALYSIS.md`
+- Statistical analysis: `docs/analysis-results/`
+- Report template: `.claude/templates/individual-assessment-report-template.md`
+- Test suite: `scripts/test_generate_individual_report.py`
 
 ---
 
@@ -239,6 +341,8 @@ No external dependencies added this session
 - ✅ Agent prompt updates → prompt-optimizer OR general-purpose
 - ✅ Documentation creation → task-document or general-purpose
 - ✅ File operations with Write/Edit tools → appropriate technical agent
+- ✅ Testing creation → general-purpose or tactical-software-engineer
+- ✅ Batch report generation → general-purpose or tactical-software-engineer
 
 **Main agent ONLY acts directly for:**
 - Reading files for context (Read tool only)

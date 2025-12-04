@@ -52,6 +52,92 @@ Usage:
 bash scripts/regenerate_all.sh
 ```
 
+### `comprehensive_analysis.py`
+**Comprehensive statistical analysis**
+
+Performs comprehensive statistical analysis across all employees including distribution analysis, tier calibration, and bias detection.
+
+Usage:
+```bash
+python scripts/comprehensive_analysis.py
+```
+
+### `generate_individual_report.py`
+**Individual assessment report generator**
+
+Generates comprehensive individual assessment reports with per-question breakdowns, multiple comparison deltas (peers, level, team, department, project), and reviewer quality analysis.
+
+Usage:
+```bash
+# Generate report for specific employee
+python scripts/generate_individual_report.py "Matt Pacione"
+
+# With verbose logging
+python scripts/generate_individual_report.py "Matt Pacione" -v
+
+# Custom output directory
+python scripts/generate_individual_report.py "Matt Pacione" --output-dir reports/individual
+```
+
+Features:
+- Overall scores with multiple delta comparisons
+- Per-question breakdowns (Questions 1-11)
+- Firewall 5s detection (reviewers giving automatic 5s)
+- Low-effort review detection (minimal text, low variance)
+- High-quality review identification (thoughtful, differentiated feedback)
+- Accomplishments and qualitative feedback placeholders for AI synthesis
+
+Output Files (organized structure):
+```
+assessments/[Department]/
+├── Raw/
+│   ├── [First]_[Last].md                    # Raw assessment data
+│   └── ...
+├── [First]_[Last]_synthesis_data.json       # AI synthesis input data
+└── [Last], [First] - Synthesized Report.md  # Final report
+```
+
+Note: Script automatically reads raw assessment files from `assessments/[Department]/Raw/` subdirectory and generates synthesized reports at the practice level.
+
+### `batch_generate_all_reports.py`
+**Batch report generator with parallel processing**
+
+Generates synthesized assessment reports for all 147 employees using parallel processing for efficient batch execution.
+
+Usage:
+```bash
+# Generate all pending reports (4 workers by default)
+python scripts/batch_generate_all_reports.py
+
+# Use 8 parallel workers for faster processing
+python scripts/batch_generate_all_reports.py --parallel 8
+
+# Resume after interruption (skip completed reports)
+python scripts/batch_generate_all_reports.py --resume
+
+# Dry run - see what would be generated
+python scripts/batch_generate_all_reports.py --dry-run
+
+# Verbose logging
+python scripts/batch_generate_all_reports.py --verbose
+```
+
+Features:
+- Parallel processing (configurable 1-8 workers)
+- Real-time progress tracking with time estimates
+- Automatic resume capability (skips completed reports)
+- Error handling and logging to `batch_generation_failures.log`
+- Progress state saved to `batch_generation_progress.json`
+- Comprehensive final summary report
+- Graceful handling of interruptions (Ctrl+C)
+
+Performance:
+- Default 4 workers: ~5-7 hours for 138 reports
+- 8 workers: ~3-4 hours for 138 reports
+- Each report takes ~2-3 minutes (includes AI synthesis)
+
+Output: `assessments/[Department]/[Last], [First] - Synthesized Report.md`
+
 ## Diagnostic Scripts
 
 Located in `scripts/diagnostic/` - Use for troubleshooting, analysis, and validation:
